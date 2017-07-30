@@ -1,7 +1,12 @@
 body {
   padding-top: 5rem;
+  background-image: url("../img/body_bg.jpg");
+  color:white;
 }
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+}
+.portrait{
+    border-radius: 100%;
 }
