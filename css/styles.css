@@ -7,6 +7,20 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-.portrait{
+#portrait{
     border-radius: 100%;
+}
+#animate{
+    position: absolute;
+    width:60%;
+}
+.quote{
+    font-style: italic;
+}
+.nodotlist{
+  list-style: none;
+  color:white;
+}
+.nodotlist a{
+    color:white;
 }

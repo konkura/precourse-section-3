@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Phil's Exciting Pre-course Website</title>
+    <title>Phil's Really Exciting Pre-course Website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,21 +26,10 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="aboutme.html">About Me</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -48,14 +37,22 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </div>
-    </nav>
+    </nav>"
 
     <div class="container">
 
       <div class="starter-template">
+        <div id="animate">
         <h1>Phil's Exciting Pre-course Website</h1>
         <p class="lead"></p>
-        <img class="portrait" src="img/philmug.jpg"/>
+        <img id="portrait" src="img/philmug.jpg"/>
+        <p class="quote">"Space is big. You just won't believe how vastly, hugely, mind- bogglingly big it is. I mean, you may think it's a long way down the road to the chemist's, but that's just peanuts to space..."</p>
+        <ul class="nodotlist">
+        <li><a href="http://www.konkura.com" target="_blank">www.konkura.com</a></li>
+        <li><a href="http://www.postureminder.co.uk" target="_blank">www.postureminder.co.uk</a></li>
+        <li><a href="http://www.powermarket.net" target="_blank">www.powermarket.net</a></li>
+        </ul>
+        </div>
       </div>
 
     </div><!-- /.container -->
@@ -64,8 +61,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+    <script>
+    $(window).ready(function() {
+        $("#animate").animate({
+          left: $("#animate").parent().width() / 2 - $("#animate").width() / 2
+        }, 2000);
+       });
+  </script>
    </body>
 </html>
